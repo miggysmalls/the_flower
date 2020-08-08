@@ -4,10 +4,10 @@ import time
 import math
 import smbus2 as smbus
 
-
 # ============================================================================
 # Raspi PCA9685 16-Channel PWM Servo Driver
 # ============================================================================
+
 
 class PCA9685:
     # Registers/etc.
@@ -80,41 +80,3 @@ class PCA9685:
         "Sets the Servo Pulse,The PWM frequency must be 50HZ"
         pulse = pulse * 4096 / 20000  # PWM frequency is 50HZ,the period is 20000us
         self.setPWM(channel, 0, int(pulse))
-
-
-if __name__ == '__main__':
-
-    pwm = PCA9685(0x40, debug=False)
-    pwm.setPWMFreq(50)
-    while True:
-
-        for i in range(500, 2500, 5):
-            pwm.setServoPulse(0, i)
-            time.sleep(0.2)
-
-
-        for i in range(2500, 500, -5):
-            pwm.setServoPulse(0, i)
-            time.sleep(0.2)
-
-
-#        for i in range(500, 1000, 5):
-#            pwm.setServoPulse(1, i)
-#            time.sleep(0.02)
-# 
-#        for i in range(500, 1000, 5):
-#            pwm.setServoPulse(2, i)
-#            time.sleep(0.02)
-# 
-#        for i in range(500, 1000, 5):
-#            pwm.setServoPulse(3, i)
-#            time.sleep(0.02)
-# 
-#        for i in range(500, 1000, 5):
-#            pwm.setServoPulse(4, i)
-#            time.sleep(0.02)
-# 
-#        for i in range(500, 1000, 5):
-#             pwm.setServoPulse(5, i)
-#             time.sleep(0.02)
-
