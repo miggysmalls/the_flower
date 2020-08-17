@@ -15,7 +15,8 @@ The Flower will by a new adventure in servos and sensors in the python language.
     * https://www.makerfocus.com/products/pwm-servo-motor-driver-iic-module-for-raspberry-pi
 
 ## Software
-#### Assumptions: git is already installed
+#### Assumptions: git is already installed 
+`sudo apt-get install cmake git`
 
 Now that the above hardware has been setup you will need to clone the this repo to complete the setup. Some of the dependencies for this project require python version 3.7.4 or higher.  The raspberry pi comes with version 3.7.3 by default so you will need to upgrade python before you can get started. Don't worry though, clone the repo first because there are scripts that will handle all this for you. 
 
