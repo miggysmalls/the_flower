@@ -6,7 +6,7 @@ The Flower will by a new adventure in servos and sensors in the python language.
 # Requirements:
 ## Hardware
 ##### Raspberry pi zero W or WH. 
-* The difference between `W` and `WH` version is the `WH' comes with pre-soldered GPIO header. This is will save you time and is worth the slight increase in cost. If you want to solder in the header yourself you can but you won't be save much money and it will be 40 closely spaced pins.  I'm not presenting all the options.  Amazon has them far more expensive and the only other place I've seen it at this price is in MicroCenter and that is an in store only purchase.  MicoCenter is my choice as I can drive to one of their locations.  
+* The difference between `W` and `WH` version is the `WH` comes with pre-soldered GPIO header. This is will save you time and is worth the slight increase in cost. If you want to solder in the header yourself you can but you won't be save much money and it will be 40 closely spaced pins.  I'm not presenting all the options.  Amazon has them far more expensive and the only other place I've seen it at this price is in MicroCenter and that is an in store only purchase.  MicroCenter is my choice as I can drive to one of their locations.  
     * https://www.adafruit.com/product/3708
     
     
